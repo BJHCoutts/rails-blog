@@ -4,10 +4,8 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
-
   def show
     @article = Article.find(params[:id])
-    @id = 1
   end
 
 end
