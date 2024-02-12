@@ -2,6 +2,8 @@
 <h2>Hello, Rails!</h2>
 <p>Find me in app/views/articles/index.html.erb</p>
 
+Our blog has <%= Article.public_count %> article(s) and counting!
+
 <ul>
   <% @articles.each do |article| %>
     <% unless article.archived? %>
